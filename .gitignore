@@ -1,0 +1,143 @@
+# .gitignore
+
+# General OS / Editor Files
+# -------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*~
+*.orig
+
+# IDE / Editor specific files
+# ---------------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+# Note: Keep extensions.json, launch.json (if general), settings.json if you want to share config.
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*vcxproj.user
+*.sln.docstates
+
+# JetBrains Rider / IDEA
+.idea/
+
+# Misc
+# -------------------------
+*.iml
+*.bak
+**/temp/
+
+# .NET / C# / ASP.NET Core (backend/LuceneApi/)
+# ----------------------------------------------
+# Build output folders (match anywhere)
+**/[Bb]in/
+**/[Oo]bj/
+
+# NuGet packages folder (less common with PackageReference but good practice)
+**/packages/
+
+# Secrets files
+**/secrets.json
+*.secrets.json
+
+# User-specific settings for Visual Studio
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vsix
+*.psess
+*.vsp
+*.vspx
+*.sap
+*.csx
+
+# Build results
+[Rr]elease/
+[Dd]ebug/
+[Xx]64/
+[Xx]86/
+[Aa][Rr][Mm]64/
+[Ww][Ii][Nn]32/
+[Ww][Ii][Nn]64/
+*_*/
+*.[Pp]ublish.xml
+*.pubxml
+*.publishproj
+
+# Test results
+**/[Tt]est[Rr]esult*/
+**/[Bb]uild[Ll]og.*
+**/[Dd]ot[Nn]et[Cc]overage.*
+*.trx
+
+# Environment specific config (often contains secrets or local paths)
+# **/appsettings.Development.json
+# NOTE: appsettings.json might be checked in if it contains non-sensitive defaults.
+
+# Lucene Index Data (IMPORTANT!)
+# -------------------------------
+# Ignore the directory where Lucene stores its index files.
+# Adjust the pattern if your index directory name is different or nested differently.
+**/lucene_index/
+
+
+# Node.js / React / Vite (frontend/react-search-ui/)
+# ---------------------------------------------------
+# Dependency directories
+**/node_modules/
+
+# Build output (Vite typically uses 'dist')
+**/dist/
+**/build/
+/.vite/ # Vite specific cache/build artifacts
+
+# Log files
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment variables specific to local environments (IMPORTANT for secrets!)
+#.env.local
+#.env.*.local
+# NOTE: .env and .env.development/.env.production MIGHT be checked in if they
+# only contain non-sensitive defaults or build configurations.
+
+# Coverage directory
+**/coverage/
+
+# Cache files
+.eslintcache
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/install-state.gz
+
+# Temporary files
+*.tsbuildinfo
+
+# Optional: Mac specific folder from node-pre-gyp
+**/build/config.gypi
