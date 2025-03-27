@@ -6,14 +6,21 @@ This is a standalone Proof-of-Concept demonstration for full-text search using L
 
 The system allows searching, adding, updating, deleting, and managing the index for an internal messaging system.
 
-Built with simplicity in mind, this demo has no database, and utilizes Lucence.NET index directly.
+Built with simplicity in mind, this demo has no database, and utilizes Lucene.NET index directly.
 
 ## Features
 
 * Full-Text Search (Lucene syntax supported)
-* Add, Update, Delete Messages via UI/API
-* Immediate Index Updates for CRUD operations
+
+    ![Full-Text Search](docs/search-1.png) 
+
+* Add, Update, Delete Messages via UI/API. Immediate Index Updates for CRUD operations
+
+    ![Add Message](docs/search-2-add-edit.png)  
+
 * Index Management (Optimize, Stats, Re-initialize) via UI/API
+
+    ![Index Management](docs/search-3-index-management.png) 
 
 ## Technology Stack
 
